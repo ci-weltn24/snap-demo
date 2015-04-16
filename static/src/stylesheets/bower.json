@@ -1,0 +1,11 @@
+{
+  "name": "funkotron",
+  "dependencies": {
+    "sass-mq": "3.1.2"
+  },
+  "install": {
+    "path": {
+      "scss": "vendor"
+    }
+  }
+}

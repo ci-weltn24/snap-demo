@@ -1,0 +1,14 @@
+// # Article
+// Abstract representation of a article page.
+
+html {
+    @include mq($until: tablet) {
+        font-size: 80%;
+    }
+}
+
+.article {
+    @include mq(tablet) {
+        padding: 0 100px;
+    }
+}

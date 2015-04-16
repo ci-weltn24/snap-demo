@@ -1,0 +1,65 @@
+// ====================================================================
+// # Article-Image
+// ====================================================================
+
+// ## Image
+//    <figure class="article-image">
+//        <a href="#">
+//            <div class="article-image__container">
+//                <img src="http://placehold.it/2000x1125" class="article-image__image" alt="">
+//            </div>
+//        </a>
+//        <figcaption class="article-image__caption">
+//            Caption/Description
+//            <span class="article-image__credit">Credit</span>
+//        </figcaption>
+//    </figure>
+
+.article-image {
+}
+
+.article-image--small {
+    max-width: 400px;
+
+    @include mq($until: tablet) {
+        max-width: 100%;
+    }
+
+    @include mq(tablet) {
+        .article-image__container {
+            width: 400px;
+        }
+    }
+}
+
+.article-image__image {
+    width: 100%;
+}
+
+.article-image__caption {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-medium;
+    margin: $grid-baseline 0;
+    color: color('scorpion');
+}
+
+.article-image__credit {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-book;
+    display: block;
+    color: color('gray-solid');
+}
+
+.article-image__container {
+    position: relative;
+}
+
+.article-image__fullscreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: color('eastern-blue');
+    display: block;
+    width: 60px;
+    height: 60px;
+}

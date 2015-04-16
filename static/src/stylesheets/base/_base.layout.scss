@@ -1,0 +1,22 @@
+// # Base-Layout
+// <html/> and <body/> styling
+
+// [1] always show y-scrollbar to prevent visual jumps
+html {
+    overflow-y: scroll; // [1]
+}
+
+body {
+    background-color: color('white-solid');
+    font-family: $font-text-default;
+}
+
+// @switch Old-IE
+// @guardian
+@if $old-ie == false {
+    html,
+    body {
+        overflow-x: hidden; // TODO: why?
+    }
+}
+

@@ -1,0 +1,98 @@
+// ====================================================================
+// # Article-Author
+// ====================================================================
+
+// ## Author
+//    <div class="article-author">
+//        <div class="article-author__avatar-wrapper">
+//            <img src="https://www.placehold.it/100x100" class="article-author__avatar-img" alt="">
+//        </div>
+//        <div class="article-author__description">
+//            <span class="article-author__by-line">
+//                Von <a href="" class="link">Name of author</a>,</span>
+//            <span class="article-author__position">Position of author</span>
+//        </div>
+//    </div>
+
+.article-author {
+}
+
+.article-author__description {
+    display: inline-block;
+}
+
+// standard news articles
+.article-author__description--is-news-article {
+    vertical-align: middle;
+}
+
+// articles with multiple authors
+.article-author__description--half-width {
+    width: 50%;
+}
+
+.article-author__headline {
+    @include font-size(19, 24);
+    font-family: $font-brand-sans-serif;
+    text-transform: uppercase;
+}
+
+.article-author__by-line {
+    @include font-size(17, 22);
+}
+
+.article-author__position {
+    @include font-size(17, 22);
+    display: block;
+}
+
+.article-author__link {
+    font-style: italic;
+}
+
+.article-author__avatar-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    margin-right: 21px;
+}
+
+.article-author__avatar-img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+// ====================================================================
+// # Commentary-Article-Author
+// ====================================================================
+
+// ## Commentary Author
+//    <div class="article-author">
+//        <div class="article-author__description article-author__description--is-commentary-article">
+//            <div class="article-author__headline">Headline</div>
+//            <div class="article-author__by-line">Von <i><a href="" class="link">Name of author</a></i></div>
+//        </div>
+//        <div class="article-author__avatar-wrapper--is-commentary-article">
+//            <img src="https://www.placehold.it/335x320" class="article-author__avatar-commentary-img" alt="">
+//        </div>
+//    </div>
+
+.article-author__description--is-commentary-article {
+    width: 49%;
+    vertical-align: bottom;
+    margin-bottom: 25px;
+}
+
+.article-author__avatar-commentary-img {
+    max-width: 100%;
+}
+
+.article-author__avatar-wrapper--is-commentary-article {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}

@@ -1,0 +1,58 @@
+// ====================================================================
+// # Quote
+// ====================================================================
+
+// ## Quote
+//    <div class="quote">
+//        <div class="quote__before"><i class="icon icon--quote-white icon--centered"></i></div>
+//        <blockquote class="quote__blockquote">
+//            Text of the quote.
+//            <footer class="quote__footer">
+//              <cite>
+//                  <span class="quote__author">Name of author</span>
+//                  <span class="quote__role">Role of author</span>
+//              </cite>
+//            </footer>
+//        </blockquote>
+//    </div>
+
+.quote {
+}
+
+.quote--small {
+    max-width: 400px;
+
+    @include mq($until: tablet) {
+        max-width: 100%;
+    }
+}
+
+.quote__before {
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: color('black-solid');
+    margin-top: 8px;
+}
+
+.quote__blockquote {
+    @include font-size(36, 43);
+    font-family: $font-brand-serif-lite-italic;
+    margin-left: 70px;
+}
+
+.quote__footer {
+    @include font-size(20, 24);
+    margin-top: 2 * $grid-baseline;
+}
+
+.quote__author {
+    font-family: $font-brand-serif;
+    font-weight: bold;
+}
+
+.quote__role {
+    font-family: $font-brand-default;
+    display: block;
+}

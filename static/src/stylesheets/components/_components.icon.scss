@@ -1,0 +1,48 @@
+// ====================================================================
+// # Icon
+// ====================================================================
+
+.icon {
+    display: inline-block;
+}
+
+// http://www.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/
+.icon--centered {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+// quote icon (white)
+//      <i class="icon icon--quote-white"/>
+.icon--quote-white {
+    width: 21px;
+    height: 17px;
+    background-size: 22px;
+}
+
+// image gallery icon (white)
+//      <i class="icon icon--image-gallery-white"/>
+.icon--image-gallery-white {
+    width: 27px;
+    height: 22px;
+    background-size: 27px;
+}
+
+// video icon (white)
+//      <i class="icon icon--video-white"/>
+.icon--video-white {
+    width: 10px;
+    height: 20px;
+    background-size: 10px;
+}
+
+// info icon (white)
+//      <i class="icon icon--info-white"/>
+.icon--info-white {
+    width: 11px;
+    height: 29px;
+}

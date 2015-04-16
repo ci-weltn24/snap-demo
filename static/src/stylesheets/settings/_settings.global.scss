@@ -1,0 +1,85 @@
+// # Global Settings
+//
+
+//
+// ## Breakpoints
+// Named breakpoints (MediaQueries) for better readability.
+
+$breakpoints: (mobile, mobileLandscape, phablet, tablet, desktop, wide);
+
+// mq-sass configuration
+$mq-breakpoints: (
+    mobile: 320px,
+    mobileLandscape: 480px,
+    phablet: 660px,
+    tablet: 740px,
+    desktop: 980px,
+    wide: 1300px,
+);
+
+$mq-show-breakpoints: ($breakpoints);
+
+//
+// ## Grid
+//
+
+// ### Page max width
+// @config
+$page-max-width: 1300px !default;
+
+// ### Base content margin
+// @config
+$base-content-margin: 0 1rem !default;
+
+// ### Grid baseline
+// @config
+$grid-baseline: 12px !default;
+
+//
+// ## Layout specific values
+//
+$layout-offset-wide: -70px;
+
+//
+// ## Colors
+// Please use the following tool when adding a new color http://chir.ag/projects/name-that-color
+//
+// scss-lint:disable ColorVariable
+$funkotron-palette: (
+    'black': (
+        'black-solid': #000
+    ),
+    'white': (
+        'white-solid': #fff
+    ),
+    'blue': (
+        'boston-blue': #3e9bb9,
+        'eastern-blue': #248db7
+    ),
+    'gray': (
+        'cod-gray': #1a1a1a,
+        'silver-chalice': #a6a6a6,
+        'gray-solid': #808080,
+        'scorpion': #595959,
+        'tuatara': #3c3c3b,
+        'westar': #e1ded6,
+        'mine-shaft': #333,
+        'cararra': #edede8,
+        'pampas': #f8f7f6
+    )
+);
+
+//
+// # Fonts
+//
+
+$font-text-default: Georgia, serif;
+$font-brand-default: 'FreigTexProBook', Georgia, serif;
+$font-brand-sans-serif: 'FreigSanProSem', Arial, sans-serif;
+$font-brand-sans-serif-book: 'FreigSanProBook', Arial, sans-serif;
+$font-brand-sans-serif-medium: 'FreigSanProMed', Arial, sans-serif;
+$font-brand-sans-serif-bold: 'FreigSanProBold', Arial, sans-serif;
+$font-brand-sans-serif-light: 'FreigSanProLight', Arial, sans-serif;
+$font-brand-serif: 'FreigDisProBla', Georgia, serif;
+$font-brand-serif-italic: 'FreigDisProBolIta', Georgia, serif;
+$font-brand-serif-lite-italic: 'FreigTexProLigIt', Georgia, serif;

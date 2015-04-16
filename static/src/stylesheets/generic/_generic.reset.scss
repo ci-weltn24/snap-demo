@@ -1,0 +1,27 @@
+// box-sizing
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// images
+
+img {
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+cite, var, address, dfn {
+    font-style: normal;
+}

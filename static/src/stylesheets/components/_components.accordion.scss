@@ -1,0 +1,123 @@
+// ====================================================================
+// # Accordion
+// ====================================================================
+
+// ## Accordion
+//    <div class="accordion accordion--small" data-module="Accordion" data-accordion-item-class-active="accordion__item--is-open">
+//        <div class="accordion__info-icon"><i class="icon icon--info-white icon--centered"></i></div>
+//        <div class="accordion__headline">Headline</div>
+//        <ul class="accordion__list">
+//            <li class="accordion__item">
+//                <header class="accordion__item-header" data-js-action="Accordion.toggle">
+//                    <span class="accordion__item-arrow icon--arrow-right-bostonBlue"></span>
+//                    <span class="accordion__item-title">Caption</span>
+//                </header>
+//                <div class="accordion__item-content" data-accordion-content="data-accordion-content">
+//                    <p>Text</p>
+//                </div>
+//            </li>
+//        </ul>
+//    </div>
+
+$accordion-fade-in-time: .7s;
+$accordion-fade-out-time: .1s;
+
+.accordion--small {
+    width: 400px;
+
+    @include mq($until: tablet) {
+        width: 100%;
+    }
+}
+
+.accordion__info-icon {
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: color('black-solid');
+}
+
+.accordion__list {
+    margin: 0;
+    margin-left: 70px;
+    padding: 0;
+    list-style: none;
+}
+
+.accordion__headline {
+    @include font-size(19, 80);
+    font-family: $font-brand-sans-serif-bold;
+    background-color: color('cararra');
+    border-bottom: 1px solid color('white-solid');
+    color: color('black-solid');
+    margin-left: 70px;
+    font-weight: bold;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+.accordion__item-header {
+    background-color: color('cararra');
+    border-top: 1px solid color('white-solid');
+    border-bottom: 1px solid color('white-solid');
+    padding: 0 30px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.accordion__item-arrow {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    transition: all $accordion-fade-out-time ease-out;
+}
+
+.accordion__item-title {
+    @include font-size(19, 60);
+    color: color('mine-shaft');
+    font-family: $font-brand-sans-serif-medium;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.accordion__item-content {
+    @include font-size(17, 21);
+    max-height: 0;
+    transition: max-height $accordion-fade-out-time ease-out;
+    overflow: hidden;
+    background-color: color('pampas');
+    font-family: $font-brand-sans-serif-medium;
+    color: color('scorpion');
+
+    // TODO: refactor p (pada)?
+    > p {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: 0;
+    }
+
+    > p:first-of-type {
+        padding-top: 20px;
+    }
+
+    > p:last-of-type {
+        padding-bottom: 50px;
+    }
+}
+
+.accordion__item--is-open {
+    .accordion__item-content {
+        max-height: 100%;
+        height: auto;
+        transition: max-height $accordion-fade-in-time ease-in;
+        border-bottom: 1px solid color('white-solid');
+        border-top: 1px solid color('white-solid');
+    }
+
+    .accordion__item-arrow {
+        transform: rotate(90deg);
+    }
+}

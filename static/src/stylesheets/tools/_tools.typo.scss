@@ -1,0 +1,36 @@
+/**
+ * Font-size and line-height shorthand
+ *
+ * @param {Number} $size
+ * @param {Number} $line-height ($size)
+ *
+ * @example
+ *  @include font-size(18, 24);
+ *
+ * @requires {function} convert-to-px
+ *
+ * @group typography
+ */
+@mixin font-size($size, $line-height: $size) {
+    font-size: convert-to-px($size);
+    line-height: convert-to-px($line-height);
+}
+
+/**
+ * Turn any value into pixels
+ *
+ * @param {Number} $value
+ *
+ * @example
+ *  font-size: convert-to-px(14); // 14px
+ *
+ * @return {Number}
+ *
+ * @group typography
+ */
+@function convert-to-px($value) {
+    @if (type-of($value) == number and $value != 0) {
+        $value: if(unitless($value), $value * 1px, $value);
+    }
+    @return $value;
+}

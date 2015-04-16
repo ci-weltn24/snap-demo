@@ -1,0 +1,113 @@
+// ====================================================================
+// # Article-Image-Gallery
+// ====================================================================
+
+// ## Image Gallery
+//    <figure class="article-image-gallery">
+//        <figcaption class="article-image-gallery__caption">Caption</figcaption>
+//        <a href="#">
+//            <div class="article-image-gallery__container">
+//                <img src="http://placehold.it/400x265" class="article-image-gallery__image" alt="">
+//                    <span class="article-image-gallery__fullscreen">
+//                        <i class="icon icon--image-gallery-white icon--centered"></i>
+//                    </span>
+//            </div>
+//        </a>
+//        <div class="article-image-gallery__description">
+//            <div class="article-image-gallery__text">
+//                <div class="article-image-gallery__main-headline">Main-Headline</div>
+//                Description
+//                <div class="article-image-gallery__sub-headline">Sub-Headline</div>
+//                Description
+//                <div class="article-image-gallery__credit">Credits</span></div>
+//                <div class="article-image-gallery__slide-container">X / X</div>
+//            </div>
+//        </div>
+//    </figure>
+.article-image-gallery-gallery {
+}
+
+.article-image-gallery--small {
+    max-width: 400px;
+
+    @include mq($until: tablet) {
+        max-width: 100%;
+    }
+
+    @include mq(tablet) {
+        .article-image-gallery__fullscreen {
+            width: 40px;
+            height: 40px;
+        }
+
+        .article-image-gallery__container {
+            width: 400px;
+        }
+    }
+}
+
+.article-image-gallery__image {
+    width: 100%;
+}
+
+.article-image-gallery__text {
+    padding-right: 80px;
+}
+
+.article-image-gallery__slide-container {
+    @include font-size(20, 21);
+    font-family: $font-brand-sans-serif-book;
+    width: 75px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.article-image-gallery__caption {
+    @include font-size(19, 28);
+    font-family: $font-brand-sans-serif-medium;
+    color: color('tuatara');
+    padding: 16px 0;
+}
+
+.article-image-gallery__description {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-book;
+    margin: $grid-baseline 0;
+    color: color('scorpion');
+    position: relative;
+}
+
+.article-image-gallery__main-headline {
+    @include font-size(19, 21);
+    font-family: $font-brand-sans-serif-medium;
+    color: color('cod-gray');
+    margin-bottom: 10px;
+}
+
+.article-image-gallery__sub-headline {
+    color: color('cod-gray');
+    margin-top: 10px;
+}
+
+.article-image-gallery__credit {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-book;
+    display: block;
+    color: color('gray-solid');
+}
+
+.article-image-gallery__container {
+    position: relative;
+}
+
+.article-image-gallery__fullscreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: color('eastern-blue');
+    display: block;
+    width: 60px;
+    height: 60px;
+}

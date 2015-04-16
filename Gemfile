@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'sass'
+gem 'scss-lint', '~>0.34.0'
+gem 'hologram'
+gem 'eb_deployer'

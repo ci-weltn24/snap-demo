@@ -1,0 +1,133 @@
+// ====================================================================
+// # Article-Content
+// ====================================================================
+
+.article-content {
+    //@include grid-block($orientation: vertical);
+    @include row();
+
+    @include mq(tablet) {
+        //@include grid-orient(horizontal);
+    }
+}
+
+.article-content__item {
+
+}
+
+.article-content__item--main {
+    @include column(12);
+    //@include grid-block($order: 1);
+}
+
+.content__author--left {
+    @include mq(tablet) {
+        margin-left: -85px;
+    }
+}
+
+// workaround for a full width container
+.content__header-background {
+    position: absolute;
+    margin-left: -9999px;
+    margin-right: -9999px;
+    z-index: -1;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -70px;
+}
+
+.content__opener {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    @include mq($until: tablet) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.content__opener--wide {
+    @include mq(tablet) {
+        margin-left: $layout-offset-wide;
+        margin-right: $layout-offset-wide;
+    }
+}
+
+.content__inline-element {
+    margin-top: 6*$grid-baseline;
+    margin-bottom: 6*$grid-baseline;
+
+    @include mq($until: tablet) {
+        margin-top: 2*$grid-baseline;
+        margin-bottom: 2*$grid-baseline;
+    }
+}
+
+.content__inline-element--wide {
+    @include mq(tablet) {
+        margin-left: $layout-offset-wide;
+        margin-right: $layout-offset-wide;
+    }
+}
+
+.content__inline-element--left {
+    @include mq(tablet) {
+        margin-left: $layout-offset-wide;
+    }
+}
+
+.content__inline-element--small-left {
+    margin-top: 0;
+
+    @include mq(tablet) {
+        clear: left;
+        display: inline-block;
+        float: left;
+        padding-right: 3*$grid-baseline;
+        margin-left: $layout-offset-wide;
+        margin-bottom: 2*$grid-baseline;
+    }
+}
+
+.content__inline-element--with-headline {
+    border-top: 1px solid color('westar');
+    border-bottom: 1px solid color('westar');
+    padding-bottom: 5px;
+}
+
+// ====================================================================
+// # Commentary-Article-Content
+// ====================================================================
+
+.content__header-background--is-commentary-article {
+    background-color: color('cararra');
+}
+
+.content__author--is-commentary-article {
+    position: relative;
+    padding-top: $gutter-width;
+    padding-bottom: 0;
+
+    @include mq(tablet) {
+        padding-top: 70px;
+    }
+}
+
+.content__headline-commentary {
+    @include font-size(52, 58);
+    font-weight: normal;
+    font-family: $font-brand-serif-italic;
+    margin-top: $grid-baseline;
+}
+
+.content__headline-container--is-commentary-article {
+    background: color('white-solid');
+    margin: 0 -50px;
+    margin-right: -50px;
+    padding: 50px 50px 0;
+    z-index: 1;
+    position: relative;
+}

@@ -1,0 +1,12 @@
+//
+// # Switches
+// - - -
+// Use switches to build different CSS. Only at compile time (not runtime). Example:
+// - ie7.css
+// - ie8.css
+// - ipad.css
+// - main.css
+
+
+// Build different CSS for old IEs (< IE10).
+$old-ie: false !default;

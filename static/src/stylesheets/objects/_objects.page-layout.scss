@@ -1,0 +1,10 @@
+// # Page layout
+// Base page layout for all pages.
+//
+
+// ## Page layout wrapper
+// Sets the max page width.
+.page-layout {
+    max-width: $page-max-width;
+    margin: 0 auto;
+}

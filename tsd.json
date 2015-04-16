@@ -1,0 +1,21 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "static/src/typescript/declarations/vendor",
+  "bundle": "static/.tmp/typings/tsd.d.ts",
+  "installed": {
+    "lodash/lodash.d.ts": {
+      "commit": "7ca8add069411b3bde47fad7208706801cde8656"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "7ca8add069411b3bde47fad7208706801cde8656"
+    },
+    "sinon/sinon.d.ts": {
+      "commit": "7ca8add069411b3bde47fad7208706801cde8656"
+    },
+    "requirejs/require.d.ts": {
+      "commit": "7ca8add069411b3bde47fad7208706801cde8656"
+    }
+  }
+}

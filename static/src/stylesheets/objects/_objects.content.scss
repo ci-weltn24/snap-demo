@@ -1,0 +1,52 @@
+// # Content
+// Abstract representation of a content page. (Article page, Video page, BiGa page).
+// This is only for the content structure. Not for header, footer, etc.
+
+// ## Content wrapper
+.content {
+    margin: $base-content-margin;
+}
+
+.content__kicker {
+    @include font-size(19, 24);
+    font-family: $font-brand-sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid color('black-solid');
+}
+
+.content__headline {
+    @include font-size(54, 60);
+    font-weight: normal;
+    font-family: $font-brand-serif;
+    margin-top: $grid-baseline;
+}
+
+.content__intro {
+    @include font-size(26, 34);
+    font-family: $font-brand-default;
+    margin-top: $grid-baseline;
+    margin-bottom: $grid-baseline / 2;
+}
+
+.content__text {
+    @include font-size(23, 30);
+    font-family: $font-brand-default;
+
+    > p {
+        margin-bottom: 2*$grid-baseline;
+    }
+
+    > p:first-of-type::first-letter {
+        @include font-size(69, 60);
+        float: left;
+        display: block;
+        margin-right: 10px;
+        margin-left: -3px;
+        margin-top: -1px;
+    }
+}
+
+.content__body {
+    //@include grid-content();
+}

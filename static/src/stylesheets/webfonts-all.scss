@@ -1,0 +1,122 @@
+@charset 'UTF-8';
+
+@import 'settings/settings.global';
+@import 'generated/webfont-asset-variables';
+
+// Set the variables to unversioned src only if they are are not already set in _webfont-asset-variables.scss.
+$FreigDisProBla-woff2: '/static/freight/FreigDisProBla.woff2' !default;
+$FreigDisProBla-woff: '/static/freight/FreigDisProBla.woff' !default;
+$FreigDisProBla-ttf: '/static/freight/FreigDisProBla.ttf' !default;
+
+$FreigTexProBook-woff2: '/static/freight/FreigTexProBook.woff2' !default;
+$FreigTexProBook-woff: '/static/freight/FreigTexProBook.woff' !default;
+$FreigTexProBook-ttf: '/static/freight/FreigTexProBook.ttf' !default;
+
+$FreigSanProSem-woff2: '/static/freight/FreigSanProSem.woff2' !default;
+$FreigSanProSem-woff: '/static/freight/FreigSanProSem.woff' !default;
+$FreigSanProSem-ttf: '/static/freight/FreigSanProSem.ttf' !default;
+
+$FreigSanProLig-woff2: '/static/freight/FreigSanProLig.woff2' !default;
+$FreigSanProLig-woff: '/static/freight/FreigSanProLig.woff' !default;
+$FreigSanProLig-ttf: '/static/freight/FreigSanProLig.ttf' !default;
+
+$FreigSanProBook-woff2: '/static/freight/FreigSanProBook.woff2' !default;
+$FreigSanProBook-woff: '/static/freight/FreigSanProBook.woff' !default;
+$FreigSanProBook-ttf: '/static/freight/FreigSanProBook.ttf' !default;
+
+$FreigSanProMed-woff2: '/static/freight/FreigSanProMed.woff2' !default;
+$FreigSanProMed-woff: '/static/freight/FreigSanProMed.woff' !default;
+$FreigSanProMed-ttf: '/static/freight/FreigSanProMed.ttf' !default;
+
+$FreigSanProBold-woff2: '/static/freight/FreigSanProBold.woff2' !default;
+$FreigSanProBold-woff: '/static/freight/FreigSanProBold.woff' !default;
+$FreigSanProBold-ttf: '/static/freight/FreigSanProBold.ttf' !default;
+
+$FreigTexProLigIt-woff2: '/static/freight/FreigTexProLigIt.woff2' !default;
+$FreigTexProLigIt-woff: '/static/freight/FreigTexProLigIt.woff' !default;
+$FreigTexProLigIt-ttf: '/static/freight/FreigTexProLigIt.ttf' !default;
+
+$FreigDisProBolIta-woff2: '/static/freight/FreigDisProBolIta.woff2' !default;
+$FreigDisProBolIta-woff: '/static/freight/FreigDisProBolIta.woff' !default;
+$FreigDisProBolIta-ttf: '/static/freight/FreigDisProBolIta.ttf' !default;
+
+@font-face {
+    font-family: 'FreigDisProBla';
+    src: url($FreigDisProBla-woff2) format('woff2'),
+    url($FreigDisProBla-woff) format('woff'),
+    url($FreigDisProBla-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigTexProBook';
+    src: url($FreigTexProBook-woff2) format('woff2'),
+    url($FreigTexProBook-woff) format('woff'),
+    url($FreigTexProBook-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigSanProSem';
+    src: url($FreigSanProSem-woff2) format('woff2'),
+    url($FreigSanProSem-woff) format('woff'),
+    url($FreigSanProSem-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigSanProLig';
+    src: url($FreigSanProLig-woff2) format('woff2'),
+    url($FreigSanProLig-woff) format('woff'),
+    url($FreigSanProLig-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigSanProBook';
+    src: url($FreigSanProBook-woff2) format('woff2'),
+    url($FreigSanProBook-woff) format('woff'),
+    url($FreigSanProBook-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigSanProMed';
+    src: url($FreigSanProMed-woff2) format('woff2'),
+    url($FreigSanProMed-woff) format('woff'),
+    url($FreigSanProMed-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigSanProBold';
+    src: url($FreigSanProBold-woff2) format('woff2'),
+    url($FreigSanProBold-woff) format('woff'),
+    url($FreigSanProBold-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigTexProLigIt';
+    src: url($FreigTexProLigIt-woff2) format('woff2'),
+    url($FreigTexProLigIt-woff) format('woff'),
+    url($FreigTexProLigIt-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreigDisProBolIta';
+    src: url($FreigDisProBolIta-woff2) format('woff2'),
+    url($FreigDisProBolIta-woff) format('woff'),
+    url($FreigDisProBolIta-ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

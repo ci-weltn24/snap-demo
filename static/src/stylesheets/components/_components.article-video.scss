@@ -1,0 +1,81 @@
+// ====================================================================
+// # Article-Video
+// ====================================================================
+
+// ## Video
+//    <figure class="article-video">
+//        <figcaption class="article-video__caption">Caption</figcaption>
+//        <a href="#">
+//            <div class="article-video__container">
+//                <img src="http://placehold.it/2000x1125" class="article-video__image" alt="">
+//                <span class="article-video__fullscreen">
+//                    <i class="icon icon--magnifier-white icon--centered"></i>
+//                </span>
+//            </div>
+//        </a>
+//        <div class="article-video__description">
+//            Caption/Description
+//            <span class="article-video__credit">Credit</span>
+//        </div>
+//    </figure>
+
+.article-video {
+}
+
+.article-video--small {
+    max-width: 400px;
+
+    @include mq($until: tablet) {
+        max-width: 100%;
+    }
+
+    @include mq(tablet) {
+        .article-video__fullscreen {
+            width: 40px;
+            height: 40px;
+        }
+
+        .article-video__container {
+            width: 400px;
+        }
+    }
+}
+
+.article-video__image {
+    width: 100%;
+}
+
+.article-video__caption {
+    @include font-size(19, 28);
+    font-family: $font-brand-sans-serif-medium;
+    color: color('tuatara');
+    padding: 16px 0;
+}
+
+.article-video__description {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-medium;
+    margin: $grid-baseline 0;
+    color: color('scorpion');
+}
+
+.article-video__credit {
+    @include font-size(17, 21);
+    font-family: $font-brand-sans-serif-book;
+    display: block;
+    color: color('gray-solid');
+}
+
+.article-video__container {
+    position: relative;
+}
+
+.article-video__fullscreen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: color('eastern-blue');
+    display: block;
+    width: 60px;
+    height: 60px;
+}

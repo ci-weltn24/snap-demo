@@ -1,0 +1,32 @@
+// # Typo
+// Typography styling for relevant base elements
+
+// Turn on kerning and ligatures
+// Causes issues in Chrome at the moment
+html,
+body {
+    text-rendering: optimizeLegibility; // optional: for older browsers
+    font-feature-settings: 'kern';
+    font-kerning: normal; // Safari 7+, Firefox 24+, Chrome 33(?)+, Opera 21
+    font-variant-ligatures: common-ligatures;
+}
+
+// ## Base headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+// ## Base paragraph
+p {
+    margin-top: 0;
+    margin-bottom: ($grid-baseline / 3) * 2;
+}
+
+a {
+    text-decoration: none;
+}

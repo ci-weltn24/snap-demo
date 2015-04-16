@@ -1,0 +1,37 @@
+// # Media Object
+// Simple structure for media (images, videos).
+// @docs http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+//
+
+// ## Media wrapper
+//      <div class="media">
+//          <img class="media__img" src="funkotron.png"/>
+//          <div class="media__body">
+//              Hello World
+//          </div>
+//      </div>
+.media {
+    @include clearfix();
+    display: block;
+}
+
+// ## Media image
+// @optional
+.media__img {
+    display: block;
+    margin-right: 0;
+}
+
+
+// ## Media body
+// For text, lists, etc.
+// @optional
+.media__body {
+    overflow: hidden;
+
+    &,
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
