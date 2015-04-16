@@ -6,7 +6,7 @@
     
 using ruby-sass:
 
-    bundle exect grunt default --ruby
+    bundle exec grunt default --ruby
     
 using npm-sass    
 
