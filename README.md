@@ -2,7 +2,8 @@
 
     bundle install
     bundle exec npm install -g grunt-cli bower bower-installer
-    bundle exec npm install
+    bundle exec npm install --ignore-scripts
+    bundle exec grunt install
     
 using ruby-sass:
 
